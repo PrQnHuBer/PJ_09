@@ -13,6 +13,11 @@ class IoTThailand :
     def showdata(self):
         print (self.wow*20)
 
+    #destructor ทำงานอัตโนมัติหลังทำงานเสร็จหรือถูกทำลาย
+    def __del__(self):
+        print ("Good morning")
+
+
 ob1 = IoTThailand(10,20,10)
 ob2 = IoTThailand(10,20,35)
 ob3 = IoTThailand(5,20,10)
